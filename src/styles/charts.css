@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+.axis line {
+    stroke: #C0C0BB;
+}
+
+.axis .tick {
+    stroke: black;
+}
+
+.axis text {
+    font-size: small;
+    fill: #635F5D;
+}
+
+.candlestickMark {
+    stroke-linecap: square;
+    stroke: black;
+}
