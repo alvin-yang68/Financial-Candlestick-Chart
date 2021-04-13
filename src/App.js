@@ -1,9 +1,9 @@
-import { Charts } from './Visualization/Charts'
+import { StockChart } from './charts/StockChart'
 
 function App() {
   return (
     <>
-      <Charts />
+      <StockChart />
     </>
   );
 }

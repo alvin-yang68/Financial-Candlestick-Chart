@@ -1,16 +1,14 @@
 import { useState, useEffect } from 'react';
-import { csv, utcParse } from 'd3';
+import { csv } from 'd3';
 
 const csvUrl = 'https://gist.githubusercontent.com/alvin-yang68/825378ee22558f0ced78a2ca74c931a7/raw/AAPLStockHistory.csv'
 
 export const useData = () => {
     const [data, setData] = useState(null);
 
-    const parseDate = utcParse('%Y-%m-%d');
-
     useEffect(() => {
         const row = d => {
-            d.date = parseDate(d.date);
+            d.date = new Date(d.date);
             d.volume = +d.volume;
             d.open = +d.open;
             d.close = +d.close;

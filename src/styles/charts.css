@@ -6,6 +6,10 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+.axis-border {
+    stroke: black;
+}
+
 .axis line {
     stroke: #C0C0BB;
 }
@@ -19,7 +23,12 @@ body {
     fill: #635F5D;
 }
 
-.candlestickMark {
+.candlestick-mark {
     stroke-linecap: square;
     stroke: black;
+}
+
+.volume-mark {
+    fill:#bdccdc;
+    opacity: 0.5;
 }
