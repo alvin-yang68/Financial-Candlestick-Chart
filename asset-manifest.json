@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/Financial-Candlestick-Chart/static/css/main.0c7aa035.chunk.css",
-    "main.js": "/Financial-Candlestick-Chart/static/js/main.503cd640.chunk.js",
-    "main.js.map": "/Financial-Candlestick-Chart/static/js/main.503cd640.chunk.js.map",
-    "runtime-main.js": "/Financial-Candlestick-Chart/static/js/runtime-main.fae9a738.js",
-    "runtime-main.js.map": "/Financial-Candlestick-Chart/static/js/runtime-main.fae9a738.js.map",
-    "static/js/2.d09d6802.chunk.js": "/Financial-Candlestick-Chart/static/js/2.d09d6802.chunk.js",
-    "static/js/2.d09d6802.chunk.js.map": "/Financial-Candlestick-Chart/static/js/2.d09d6802.chunk.js.map",
-    "static/js/3.71a94d2a.chunk.js": "/Financial-Candlestick-Chart/static/js/3.71a94d2a.chunk.js",
-    "static/js/3.71a94d2a.chunk.js.map": "/Financial-Candlestick-Chart/static/js/3.71a94d2a.chunk.js.map",
+    "main.js": "/Financial-Candlestick-Chart/static/js/main.5ec0f805.chunk.js",
+    "main.js.map": "/Financial-Candlestick-Chart/static/js/main.5ec0f805.chunk.js.map",
+    "runtime-main.js": "/Financial-Candlestick-Chart/static/js/runtime-main.542c3dba.js",
+    "runtime-main.js.map": "/Financial-Candlestick-Chart/static/js/runtime-main.542c3dba.js.map",
+    "static/js/2.0618a451.chunk.js": "/Financial-Candlestick-Chart/static/js/2.0618a451.chunk.js",
+    "static/js/2.0618a451.chunk.js.map": "/Financial-Candlestick-Chart/static/js/2.0618a451.chunk.js.map",
+    "static/js/3.59125bbf.chunk.js": "/Financial-Candlestick-Chart/static/js/3.59125bbf.chunk.js",
+    "static/js/3.59125bbf.chunk.js.map": "/Financial-Candlestick-Chart/static/js/3.59125bbf.chunk.js.map",
     "index.html": "/Financial-Candlestick-Chart/index.html",
     "static/css/main.0c7aa035.chunk.css.map": "/Financial-Candlestick-Chart/static/css/main.0c7aa035.chunk.css.map",
-    "static/js/2.d09d6802.chunk.js.LICENSE.txt": "/Financial-Candlestick-Chart/static/js/2.d09d6802.chunk.js.LICENSE.txt"
+    "static/js/2.0618a451.chunk.js.LICENSE.txt": "/Financial-Candlestick-Chart/static/js/2.0618a451.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.fae9a738.js",
-    "static/js/2.d09d6802.chunk.js",
+    "static/js/runtime-main.542c3dba.js",
+    "static/js/2.0618a451.chunk.js",
     "static/css/main.0c7aa035.chunk.css",
-    "static/js/main.503cd640.chunk.js"
+    "static/js/main.5ec0f805.chunk.js"
   ]
 }
