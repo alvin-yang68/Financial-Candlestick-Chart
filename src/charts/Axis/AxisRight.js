@@ -1,22 +1,22 @@
 import { format } from 'd3';
 
-export const AxisRight = ({ yScale, innerWidth, innerHeight, axisOffset }) => {
-    const tickFormat = format('~s');
+const tickFormat = format('~s');
 
+export const AxisRight = ({ yScale, yLength, xOffset }) => {
     const ticks = yScale.ticks().map(tickValue => (
         <g
             className='axis'
             key={tickValue}
-            transform={`translate(${innerWidth},${yScale(tickValue)})`}
+            transform={`translate(0,${yScale(tickValue)})`}
         >
             <line
                 className='tick'
-                x1={axisOffset + 6}
-                x2={axisOffset}
+                x1={xOffset + 6}
+                x2={xOffset}
             />
             <text
                 style={{ textAnchor: 'start' }}
-                x={axisOffset + 12}
+                x={xOffset + 12}
                 dy=".32em"
             >
                 {tickFormat(tickValue)}
@@ -29,9 +29,9 @@ export const AxisRight = ({ yScale, innerWidth, innerHeight, axisOffset }) => {
             {ticks}
             <line
                 className='axis-border'
-                x1={innerWidth + axisOffset}
-                x2={innerWidth + axisOffset}
-                y2={innerHeight}
+                x1={xOffset}
+                x2={xOffset}
+                y2={yLength}
             />
         </>
     )

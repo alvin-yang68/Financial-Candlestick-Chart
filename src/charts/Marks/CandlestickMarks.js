@@ -1,11 +1,11 @@
 import { utcFormat, format, schemeSet1 } from 'd3';
 
-export const CandlestickMarks = ({ data, xScale, yScale }) => {
-    const formatDate = utcFormat('%B %-d, %Y');
-    const formatValue = format('.2f');
-    const formatString = format('.3s');
+const formatDate = utcFormat('%B %-d, %Y');
+const formatValue = format('.2f');
+const formatString = format('.3s');
 
-    return data.map(d => (
+export const CandlestickMarks = ({ data, xScale, yScale }) => (
+    data.map(d => (
         <g className='candlestick-mark' key={d.date} transform={`translate(${xScale(d.date)},0)`}>
             <line
                 y1={yScale(d.low)}
@@ -32,4 +32,4 @@ export const CandlestickMarks = ({ data, xScale, yScale }) => {
             />
         </g>
     ))
-}
+)

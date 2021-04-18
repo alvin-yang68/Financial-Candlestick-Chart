@@ -1,28 +1,26 @@
 import { utcFormat } from 'd3';
 
-export const AxisBottom = ({ xScale, innerWidth, innerHeight, axisOffset }) => {
-    const tickFormat = utcFormat('%-m/%-d');
+const tickFormat = utcFormat('%-m/%-d');
 
-    const onlyMonday = d => d.getUTCDay() === 1;
-
+export const AxisBottom = ({ xScale, xLength, yOffset, filterCondition }) => {
     const ticks = xScale.domain()
-        .filter(onlyMonday)
+        .filter(filterCondition)
         .map(tickValue => (
             <g
                 className='axis'
                 key={tickValue}
                 transform={`translate(${xScale(tickValue)},0)`}
             >
-                <line y2={innerHeight + axisOffset} />
+                <line y2={yOffset} />
                 <line
                     className='tick'
-                    y1={innerHeight + axisOffset}
-                    y2={innerHeight + axisOffset + 6}
+                    y1={yOffset}
+                    y2={yOffset + 6}
                 />
                 <text
                     style={{ textAnchor: 'middle' }}
                     dy=".71em"
-                    y={innerHeight + axisOffset + 14}
+                    y={yOffset + 14}
                 >
                     {tickFormat(tickValue)}
                 </text>
@@ -34,10 +32,10 @@ export const AxisBottom = ({ xScale, innerWidth, innerHeight, axisOffset }) => {
             {ticks}
             <line
                 className='axis-border'
-                y1={innerHeight + axisOffset}
-                y2={innerHeight + axisOffset}
+                y1={yOffset}
+                y2={yOffset}
                 x1={-xScale.bandwidth() / 2}
-                x2={innerWidth + xScale.bandwidth() / 2}
+                x2={xLength + xScale.bandwidth() / 2}
             />
         </>
     )
