@@ -5,10 +5,6 @@ import { AxisBottom } from './Axis/AxisBottom';
 import { AxisLeft } from './Axis/AxisLeft';
 import { LineMarks } from './Marks/LineMarks';
 
-const margin = { top: 20, right: 80, bottom: 40, left: 80 };
-const yAxisNumTicks = 5;
-const yAxisLabelOffset = 60;
-
 const leftAxisTickFormat = d3.format('$~f');
 const bottomAxisTickFormat = d3.utcFormat('%Y');
 
@@ -22,7 +18,12 @@ const scaleBandInvert = scale => {
     })
 }
 
-export const Brush = ({ data, width, height, initialBrush, setBrushExtent }) => {
+export const Brush = ({
+    data,
+    specs: { width, height, margin, yAxisNumTicks, yAxisLabelOffset },
+    initialBrushExtent,
+    setBrushExtent
+}) => {
     const brushRef = useRef();
 
     const innerWidth = width - margin.left - margin.right;
@@ -54,7 +55,7 @@ export const Brush = ({ data, width, height, initialBrush, setBrushExtent }) => 
             });
         const brushObj = d3.select(brushRef.current);
         brush(brushObj);
-        brush.move(brushObj, [xScale(initialBrush[0]), xScale(initialBrush[1])]);
+        brush.move(brushObj, [xScale(initialBrushExtent[0]), xScale(initialBrushExtent[1])]);
     }, [xScale, innerWidth, innerHeight]);
 
     const getFirstMondayOfYear = d => (

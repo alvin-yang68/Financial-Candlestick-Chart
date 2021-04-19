@@ -2,7 +2,7 @@ export const VolumeMarks = ({ data, xScale, yScale, innerHeight }) => (
     data.map(d => (
         <rect
             className='volume-mark'
-            key={d.volume}
+            key={d.date}
             x={xScale(d.date) - xScale.bandwidth() / 2}
             y={yScale(d.volume)}
             width={xScale.bandwidth()}
