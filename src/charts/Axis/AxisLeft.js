@@ -1,9 +1,5 @@
-import { format } from 'd3';
-
-const tickFormat = format('$~f');
-
-export const AxisLeft = ({ yScale, yLength, xOffset }) => {
-    const ticks = yScale.ticks().map(tickValue => (
+export const AxisLeft = ({ yScale, yLength, xOffset = 0, numTicks = null, tickFormat }) => {
+    const ticks = yScale.ticks(numTicks).map(tickValue => (
         <g
             className='axis'
             key={tickValue}

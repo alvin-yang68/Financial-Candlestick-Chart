@@ -32,3 +32,17 @@ body {
     fill:#bdccdc;
     opacity: 0.5;
 }
+
+.line-mark {
+    fill: #cce5df;
+    stroke: #69b3a2;
+    stroke-width: 1.5;
+}
+
+.brush .handle {
+    pointer-events: none;
+}
+
+.overlay {
+    pointer-events: none;
+}

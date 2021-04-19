@@ -1,8 +1,4 @@
-import { utcFormat } from 'd3';
-
-const tickFormat = utcFormat('%-m/%-d');
-
-export const AxisBottom = ({ xScale, xLength, yOffset, filterCondition }) => {
+export const AxisBottom = ({ xScale, xLength, filterCondition, bandwidthOffset = 0, yOffset = 0, axisLine = false, tickFormat }) => {
     const ticks = xScale.domain()
         .filter(filterCondition)
         .map(tickValue => (
@@ -11,7 +7,7 @@ export const AxisBottom = ({ xScale, xLength, yOffset, filterCondition }) => {
                 key={tickValue}
                 transform={`translate(${xScale(tickValue)},0)`}
             >
-                <line y2={yOffset} />
+                {axisLine && <line y2={yOffset} />}
                 <line
                     className='tick'
                     y1={yOffset}
@@ -34,8 +30,8 @@ export const AxisBottom = ({ xScale, xLength, yOffset, filterCondition }) => {
                 className='axis-border'
                 y1={yOffset}
                 y2={yOffset}
-                x1={-xScale.bandwidth() / 2}
-                x2={xLength + xScale.bandwidth() / 2}
+                x1={-bandwidthOffset}
+                x2={xLength + bandwidthOffset}
             />
         </>
     )

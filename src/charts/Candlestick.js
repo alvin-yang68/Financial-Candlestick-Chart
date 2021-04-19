@@ -9,6 +9,10 @@ import { VolumeMarks } from './Marks/VolumeMarks';
 const margin = { top: 20, right: 80, bottom: 40, left: 80 };
 const yAxisLabelOffset = 60;
 
+const leftAxisTickFormat = d3.format('$~f');
+const rightAxisTickFormat = d3.format('~s');
+const bottomAxisTickFormat = d3.utcFormat('%-m/%-d');
+
 export const Candlestick = ({ data, width, height }) => {
     const innerWidth = width - margin.left - margin.right;
     const innerHeight = height - margin.top - margin.bottom;
@@ -37,13 +41,17 @@ export const Candlestick = ({ data, width, height }) => {
             <AxisBottom
                 xScale={xScale}
                 xLength={innerWidth}
-                yOffset={innerHeight}
                 filterCondition={getOnlyMonday}
+                yOffset={innerHeight}
+                bandwidthOffset={xScale.bandwidth() / 2}
+                axisLine={true}
+                tickFormat={bottomAxisTickFormat}
             />
             <AxisLeft
                 yScale={yPriceScale}
                 yLength={innerHeight}
                 xOffset={-xScale.bandwidth() / 2}
+                tickFormat={leftAxisTickFormat}
             />
             <text
                 className='axis-label'
@@ -51,11 +59,12 @@ export const Candlestick = ({ data, width, height }) => {
                 transform={`translate(${-yAxisLabelOffset},${innerHeight / 2}) rotate(-90)`}
             >
                 Price
-                    </text>
+            </text>
             <AxisRight
                 yScale={yVolumeScale}
                 yLength={innerHeight}
                 xOffset={innerWidth + xScale.bandwidth() / 2}
+                tickFormat={rightAxisTickFormat}
             />
             <text
                 className='axis-label'
@@ -63,7 +72,7 @@ export const Candlestick = ({ data, width, height }) => {
                 transform={`translate(${innerWidth + yAxisLabelOffset},${innerHeight / 2}) rotate(90)`}
             >
                 Volume
-                    </text>
+            </text>
             <VolumeMarks
                 data={data}
                 xScale={xScale}
