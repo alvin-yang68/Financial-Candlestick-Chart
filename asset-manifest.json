@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/Financial-Candlestick-Chart/static/css/main.0c7aa035.chunk.css",
-    "main.js": "/Financial-Candlestick-Chart/static/js/main.5ec0f805.chunk.js",
-    "main.js.map": "/Financial-Candlestick-Chart/static/js/main.5ec0f805.chunk.js.map",
-    "runtime-main.js": "/Financial-Candlestick-Chart/static/js/runtime-main.542c3dba.js",
-    "runtime-main.js.map": "/Financial-Candlestick-Chart/static/js/runtime-main.542c3dba.js.map",
-    "static/js/2.0618a451.chunk.js": "/Financial-Candlestick-Chart/static/js/2.0618a451.chunk.js",
-    "static/js/2.0618a451.chunk.js.map": "/Financial-Candlestick-Chart/static/js/2.0618a451.chunk.js.map",
-    "static/js/3.59125bbf.chunk.js": "/Financial-Candlestick-Chart/static/js/3.59125bbf.chunk.js",
-    "static/js/3.59125bbf.chunk.js.map": "/Financial-Candlestick-Chart/static/js/3.59125bbf.chunk.js.map",
+    "main.css": "/Financial-Candlestick-Chart/static/css/main.2697c49d.chunk.css",
+    "main.js": "/Financial-Candlestick-Chart/static/js/main.f06b3597.chunk.js",
+    "main.js.map": "/Financial-Candlestick-Chart/static/js/main.f06b3597.chunk.js.map",
+    "runtime-main.js": "/Financial-Candlestick-Chart/static/js/runtime-main.8edc5a9c.js",
+    "runtime-main.js.map": "/Financial-Candlestick-Chart/static/js/runtime-main.8edc5a9c.js.map",
+    "static/js/2.ecae8e26.chunk.js": "/Financial-Candlestick-Chart/static/js/2.ecae8e26.chunk.js",
+    "static/js/2.ecae8e26.chunk.js.map": "/Financial-Candlestick-Chart/static/js/2.ecae8e26.chunk.js.map",
+    "static/js/3.c905ce06.chunk.js": "/Financial-Candlestick-Chart/static/js/3.c905ce06.chunk.js",
+    "static/js/3.c905ce06.chunk.js.map": "/Financial-Candlestick-Chart/static/js/3.c905ce06.chunk.js.map",
     "index.html": "/Financial-Candlestick-Chart/index.html",
-    "static/css/main.0c7aa035.chunk.css.map": "/Financial-Candlestick-Chart/static/css/main.0c7aa035.chunk.css.map",
-    "static/js/2.0618a451.chunk.js.LICENSE.txt": "/Financial-Candlestick-Chart/static/js/2.0618a451.chunk.js.LICENSE.txt"
+    "static/css/main.2697c49d.chunk.css.map": "/Financial-Candlestick-Chart/static/css/main.2697c49d.chunk.css.map",
+    "static/js/2.ecae8e26.chunk.js.LICENSE.txt": "/Financial-Candlestick-Chart/static/js/2.ecae8e26.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.542c3dba.js",
-    "static/js/2.0618a451.chunk.js",
-    "static/css/main.0c7aa035.chunk.css",
-    "static/js/main.5ec0f805.chunk.js"
+    "static/js/runtime-main.8edc5a9c.js",
+    "static/js/2.ecae8e26.chunk.js",
+    "static/css/main.2697c49d.chunk.css",
+    "static/js/main.f06b3597.chunk.js"
   ]
 }
