@@ -5,6 +5,8 @@ import { AxisBottom } from './Axis/AxisBottom';
 import { AxisLeft } from './Axis/AxisLeft';
 import { LineMarks } from './Marks/LineMarks';
 
+const yAxisLabelOffset = 60;
+
 const leftAxisTickFormat = d3.format('$~f');
 const bottomAxisTickFormat = d3.utcFormat('%Y');
 
@@ -20,7 +22,7 @@ const scaleBandInvert = scale => {
 
 export const Brush = ({
     data,
-    specs: { width, height, margin, yAxisNumTicks, yAxisLabelOffset },
+    specs: { width, height, margin, yAxisNumTicks },
     initialBrushExtent,
     setBrushExtent
 }) => {

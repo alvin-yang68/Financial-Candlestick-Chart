@@ -6,13 +6,15 @@ import { AxisRight } from './Axis/AxisRight';
 import { CandlestickMarks } from './Marks/CandlestickMarks';
 import { VolumeMarks } from './Marks/VolumeMarks';
 
+const yAxisLabelOffset = 60;
+
 const leftAxisTickFormat = d3.format('$~f');
 const rightAxisTickFormat = d3.format('~s');
 const bottomAxisTickFormat = d3.utcFormat('%-m/%-d');
 
 export const Main = ({
     data,
-    specs: { width, height, margin, yAxisLabelOffset }
+    specs: { width, height, margin }
 }) => {
     const innerWidth = width - margin.left - margin.right;
     const innerHeight = height - margin.top - margin.bottom;

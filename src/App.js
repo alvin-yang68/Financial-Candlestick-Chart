@@ -8,12 +8,10 @@ function App() {
     brushSpecs: {
       brushSize: 130,
       margin: { top: 20, right: 80, bottom: 40, left: 80 },
-      yAxisNumTicks: 5,
-      yAxisLabelOffset: 60
+      yAxisNumTicks: 5
     },
     candlestickSpecs: {
-      margin: { top: 20, right: 80, bottom: 40, left: 80 },
-      yAxisLabelOffset: 60
+      margin: { top: 20, right: 80, bottom: 40, left: 80 }
     }
   }
   return (
