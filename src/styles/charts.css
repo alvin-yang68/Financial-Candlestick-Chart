@@ -39,7 +39,7 @@ body {
     stroke-width: 1.5;
 }
 
-.brush .handle {
+.handle {
     pointer-events: none;
 }
 

@@ -12,7 +12,7 @@ export const StockChart = ({
         totalHeight,
         seperationRatio,
         brushSpecs,
-        candlestickSpecs
+        mainChartSpecs
     }
 }) => {
     const data = useData();
@@ -26,8 +26,8 @@ export const StockChart = ({
         return <pre>Loading...</pre>;
     }
 
-    candlestickSpecs = {
-        ...candlestickSpecs,
+    mainChartSpecs = {
+        ...mainChartSpecs,
         width: totalWidth,
         height: totalHeight * seperationRatio
     }
@@ -52,7 +52,7 @@ export const StockChart = ({
             <svg width={totalWidth} height={totalHeight}>
                 <Main
                     data={slicedData}
-                    specs={candlestickSpecs}
+                    specs={mainChartSpecs}
                 />
                 <g transform={`translate(0,${totalHeight * seperationRatio})`}>
                     <Brush
