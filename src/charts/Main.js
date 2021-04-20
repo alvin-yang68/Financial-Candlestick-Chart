@@ -10,7 +10,7 @@ const leftAxisTickFormat = d3.format('$~f');
 const rightAxisTickFormat = d3.format('~s');
 const bottomAxisTickFormat = d3.utcFormat('%-m/%-d');
 
-export const Candlestick = ({
+export const Main = ({
     data,
     specs: { width, height, margin, yAxisLabelOffset }
 }) => {

@@ -1,9 +1,9 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import ReactTooltip from 'react-tooltip';
 
 import '../styles/charts.css';
 import { useData } from './useData';
-import { Candlestick } from './Candlestick'
+import { Main } from './Main'
 import { Brush } from './Brush'
 
 export const StockChart = ({
@@ -17,6 +17,10 @@ export const StockChart = ({
 }) => {
     const data = useData();
     const [brushExtent, setBrushExtent] = useState();
+
+    useEffect(() => {
+        ReactTooltip.rebuild();
+    });
 
     if (!data) {
         return <pre>Loading...</pre>;
@@ -46,7 +50,7 @@ export const StockChart = ({
     return (
         <>
             <svg width={totalWidth} height={totalHeight}>
-                <Candlestick
+                <Main
                     data={slicedData}
                     specs={candlestickSpecs}
                 />
