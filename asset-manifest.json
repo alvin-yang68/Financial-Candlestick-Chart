@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/Financial-Candlestick-Chart/static/css/main.2697c49d.chunk.css",
-    "main.js": "/Financial-Candlestick-Chart/static/js/main.80849fb2.chunk.js",
-    "main.js.map": "/Financial-Candlestick-Chart/static/js/main.80849fb2.chunk.js.map",
+    "main.css": "/Financial-Candlestick-Chart/static/css/main.f651cca6.chunk.css",
+    "main.js": "/Financial-Candlestick-Chart/static/js/main.c3960c0d.chunk.js",
+    "main.js.map": "/Financial-Candlestick-Chart/static/js/main.c3960c0d.chunk.js.map",
     "runtime-main.js": "/Financial-Candlestick-Chart/static/js/runtime-main.8edc5a9c.js",
     "runtime-main.js.map": "/Financial-Candlestick-Chart/static/js/runtime-main.8edc5a9c.js.map",
     "static/js/2.4d93dd9f.chunk.js": "/Financial-Candlestick-Chart/static/js/2.4d93dd9f.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.c905ce06.chunk.js": "/Financial-Candlestick-Chart/static/js/3.c905ce06.chunk.js",
     "static/js/3.c905ce06.chunk.js.map": "/Financial-Candlestick-Chart/static/js/3.c905ce06.chunk.js.map",
     "index.html": "/Financial-Candlestick-Chart/index.html",
-    "static/css/main.2697c49d.chunk.css.map": "/Financial-Candlestick-Chart/static/css/main.2697c49d.chunk.css.map",
+    "static/css/main.f651cca6.chunk.css.map": "/Financial-Candlestick-Chart/static/css/main.f651cca6.chunk.css.map",
     "static/js/2.4d93dd9f.chunk.js.LICENSE.txt": "/Financial-Candlestick-Chart/static/js/2.4d93dd9f.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.8edc5a9c.js",
     "static/js/2.4d93dd9f.chunk.js",
-    "static/css/main.2697c49d.chunk.css",
-    "static/js/main.80849fb2.chunk.js"
+    "static/css/main.f651cca6.chunk.css",
+    "static/js/main.c3960c0d.chunk.js"
   ]
 }
