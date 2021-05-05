@@ -4,6 +4,7 @@ import { AxisBottom } from './Axis/AxisBottom';
 import { AxisLeft } from './Axis/AxisLeft';
 import { AxisRight } from './Axis/AxisRight';
 import { CandlestickMarks } from './Marks/CandlestickMarks';
+import { EventMarks } from './Marks/EventMarks';
 import { VolumeMarks } from './Marks/VolumeMarks';
 
 const yAxisLabelOffset = 60;
@@ -85,6 +86,11 @@ export const Main = ({
                 data={data}
                 xScale={xScale}
                 yScale={yPriceScale}
+            />
+            <EventMarks
+                data={data}
+                xScale={xScale}
+                innerHeight={innerHeight}
             />
         </g>
     )

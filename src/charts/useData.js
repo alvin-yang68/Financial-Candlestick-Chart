@@ -14,6 +14,8 @@ export const useData = () => {
             d.close = +d.close;
             d.high = +d.high;
             d.low = +d.low;
+            d.eventTitle = Math.random() < 0.05 ? 'This is an event' : null;
+            d.eventCallback = () => console.log('Hello world');
             return d;
         }
         csv(csvUrl, row).then(setData);
